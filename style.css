@@ -20,6 +20,7 @@
 img {
   width: 100px;
   height: auto;
+  padding: 5px;
 }
 .item:nth-child(3) {
   height: 150%;
@@ -36,9 +37,22 @@ img {
   border-bottom: 1px solid #eee;
 }
 
-.nav {
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
 .nav a {
   text-decoration: none;
   color: #333;
@@ -51,6 +65,11 @@ img {
 }
 
 .header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  padding: 2ex;
+  margin: 0ex;
 }
 
 .header a, .nav a {
