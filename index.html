@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website for NNPC Medical Services Limited.">
+    <meta name="keywords" content="healthcare, hospital, clinic, appointment booking, telemedicine, health education, doctor directory, services, emergency, pharmacy">
+    <meta name="author" content="NMSL Team">
+
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/pics/logo.png">
     <script src="script.js" defer></script>
@@ -24,8 +28,169 @@
         </div>
     </div>
     <div class="container">
-        <div class="item">3</div>
-        <div class="item">1</div>
+<!-- Home/Landing Page -->
+<!-- Information & Awareness -->
+ <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h2>Your Health, Our Priority</h2>
+            <p>Providing compassionate and comprehensive care for a healthier you.</p>
+            <a href="#appointments" class="btn">Book an Appointment</a>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Our Vision</h3>
+                <p>To be the leading healthcare provider known for clinical excellence and patient-centered care.</p>
+            </div>
+            <div class="card">
+                <h3>Our Mission</h3>
+                <p>To provide high-quality, accessible, and affordable healthcare services to our community.</p>
+            </div>
+            <div class="card">
+                <h3>Leadership</h3>
+                <p>Meet our dedicated team of leaders committed to advancing healthcare.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container">
+        <h2>Our Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Specialties</h3>
+                <p>Cardiology, Pediatrics, Orthopedics, and more.</p>
+            </div>
+            <div class="card">
+                <h3>Diagnostics</h3>
+                <p>State-of-the-art lab and imaging services.</p>
+            </div>
+            <div class="card">
+                <h3>Pharmacy</h3>
+                <p>In-house pharmacy for all your prescription needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Directory Section -->
+    <section id="doctors" class="container">
+        <h2>Our Doctors</h2>
+        <div class="grid">
+            <!-- Doctor Card 1 -->
+            <div class="doctor-card card">
+                <img src="https://via.placeholder.com/100" alt="Dr. John Doe">
+                <h3>Dr. John Doe</h3>
+                <p>Cardiologist</p>
+                <p>Schedule: Mon, Wed, Fri</p>
+                <a href="#">View Profile</a>
+            </div>
+            <!-- Doctor Card 2 -->
+            <div class="doctor-card card">
+                <img src="https://via.placeholder.com/100" alt="Dr. Jane Smith">
+                <h3>Dr. Jane Smith</h3>
+                <p>Pediatrician</p>
+                <p>Schedule: Tue, Thu</p>
+                <a href="#">View Profile</a>
+            </div>
+            <!-- More doctor cards would be generated here from the database -->
+        </div>
+    </section>
+
+    <!-- Patient Interaction Section -->
+    <section id="appointments" class="container">
+        <h2>Book an Appointment</h2>
+        <form id="appointment-form">
+            <div class="form-group">
+                <label for="patient-name">Your Name</label>
+                <input type="text" id="patient-name" name="patient-name" required>
+            </div>
+            <div class="form-group">
+                <label for="doctor-select">Choose a Doctor</label>
+                <select id="doctor-select" name="doctor" required>
+                    <option value="">-- Select a Doctor --</option>
+                    <option value="Dr. John Doe">Dr. John Doe</option>
+                    <option value="Dr. Jane Smith">Dr. Jane Smith</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="appointment-date">Preferred Date</label>
+                <input type="date" id="appointment-date" name="appointment-date" required>
+            </div>
+            <div class="form-group">
+                <label for="appointment-time">Preferred Time</label>
+                <input type="time" id="appointment-time" name="appointment-time" required>
+            </div>
+            <button type="submit" class="btn">Submit Appointment Request</button>
+        </form>
+    </section>
+
+    <!-- Health Education Section -->
+    <section id="health-education" class="container">
+        <h2>Health Education</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Blog Post Title 1</h3>
+                <p>Tips for a healthier lifestyle...</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="card">
+                <h3>FAQ: Common Questions</h3>
+                <p>Answers to frequently asked questions about our services.</p>
+                <a href="#">View FAQs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Administrative/Support Section -->
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Enquiry Form</h3>
+                <form id="enquiry-form">
+                    <div class="form-group">
+                        <label for="enquiry-name">Your Name</label>
+                        <input type="text" id="enquiry-name" name="enquiry-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="enquiry-email">Your Email</label>
+                        <input type="email" id="enquiry-email" name="enquiry-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="enquiry-message">Your Message</label>
+                        <textarea id="enquiry-message" name="enquiry-message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+            <div class="card">
+                <h3>Emergency Services</h3>
+                <p>For immediate medical emergencies, call our 24/7 hotline.</p>
+                <p><strong>Ambulance:</strong> <a href="tel:+2348141234567">+234 (0) 814 123 4567</a></p>
+                <h3>Insurance Partners</h3>
+                <p>We work with a variety of HMOs. <a href="#">See our partners</a>.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 NNPC MEDICAL SERVICES LIMITED.</p>
+            <p>
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+
+
     </div>
 
 
